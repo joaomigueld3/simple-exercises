@@ -3,6 +3,10 @@
 let array = ['Árvore', 'Cadeira', 'Estrada', 'Banco', 'Ar']
 let arraySorted = array.sort(); //ordinary sort
 let localeSort = array.sort((a,b) => a.localeCompare(b))
+
+array.forEach((element, index) => {
+    console.log(element, index)
+});
 console.log(arraySorted, localeSort)
 
 //remove item from array; splice performs better than filter
